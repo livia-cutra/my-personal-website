@@ -14,7 +14,7 @@ function Projects() {
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          my recent <strong className="purple">works </strong>
+          my recent <strong >works </strong>
         </h1>
         <p style={{ color: "dark green" }}>
           below are a mix of projects i've worked on outside of class

@@ -1,35 +1,9 @@
-/* html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    #faf7f2,
-    #f3eee8
-  );
-
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(255, 255, 255, 0.85),
-    rgba(250, 247, 242, 0.9)
-  );
-
-  --imp-text-color: #9bb8a0;
-}
-
-:root {
-  --green: #678976;
-  --green-dark: #203e21;
-  --green-muted: #9bb8a0;
-
-  --text-main: #203e21;
-  --text-heading: #203e21;
-}
- */
-
- /* =========================
+/* =========================
    DESIGN SYSTEM VARIABLES
    ========================= */
 
 :root {
-  /* Brand Greens */
+  /* brand greens */
   --green-primary: #678976;
   --green-dark: #355f47;;
   --green-muted: #9bb8a0;
@@ -37,17 +11,17 @@
   --green-hover: #558c61;
   --green-accent: #308b4a;
 
-  /* Text */
+  /* text */
   --text-main: #203e21;
   --text-heading: #203e21;
   --text-muted: #8fa59a;
 
-  /* Backgrounds */
+  /* backgrounds */
   --bg-light: #faf7f2;
   --bg-white: #fffff9;
   --bg-glass: rgba(255, 255, 255, 0.7);
 
-  /* Typography scale */
+  /* typography scale */
   --text-xs: 0.85rem;
   --text-sm: 0.95rem;
   --text-base: 1rem;
@@ -57,27 +31,22 @@
   --text-2xl: 2.4rem;
   --text-3xl: 2.6rem;
 
-  /* Radius */
+  /* radius */
   --radius-sm: 14px;
   --radius-md: 18px;
   --radius-pill: 999px;
 
-  /* Shadows */
+  /* shadows */
   --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.06);
   --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* Global font */
+/* global font */
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   color: var(--text-main);
   background-color: var(--bg-light);
-}
-
-
-.purple {
-  color: var(--imp-text-color) !important;
 }
 
 button:focus {
@@ -94,21 +63,8 @@ button:focus {
 
 
 /* --------- */
-/*  Preloader */
+/*  preloader */
 /* --------- */
-/* #preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #fffff9;
-  background-image: url(./Assets/spinning-dots.svg);
-  background-size: 20% 20% !important;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
 #preloader {
   position: fixed;
   inset: 0;
@@ -126,45 +82,38 @@ button:focus {
   opacity: 0;
 }
 
-/* #preloader-none {
-  opacity: 0;
-  display: none;
-} */
-
 #no-scroll {
   overflow: hidden;
   height: 100vh;
 }
 
 /* --------- */
-/*Scrollbar   */
+/*scrollbar   */
 /* --------- */
 
 ::-webkit-scrollbar {
   width: 7px;
 }
 
-/*scrollbar */
-
-/* Track */
+/* track */
 ::-webkit-scrollbar-track {
   background: var(--green-dark);
 }
 
-/* Handle */
+/* handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(121, 148, 123, 0.959);
   border-radius: 12px;
 }
 
-/* Handle on hover */
+/* handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(1, 45, 21, 0.911);
   border-radius: 12px;
 }
 
 /* --------- */
-/* Navbar Section  */
+/* navbar section  */
 /* --------- */
 
 /* header on desktop when scrolling */
@@ -246,9 +195,8 @@ button:focus {
   }
 }
 
-/* idk */
 .navbar-brand {
-  color: #d51b1b !important;
+  color: #205610 !important;
   margin-left: 35px !important;
 }
 
@@ -308,13 +256,13 @@ button:focus {
 }
 
 /* --------- */
-/* Home section */
+/* home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* refers to the name of @keyframes element below */
+  animation-duration: 2.1s; /* change to speed up or slow down */
+  animation-iteration-count: infinite; /* never stop waving tehe :) */
+  transform-origin: 70% 70%; /* pivot around the bottom-left palm */
   display: inline-block;
 }
 
@@ -324,7 +272,7 @@ button:focus {
   }
   10% {
     transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
+  } /* five values below can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
@@ -339,7 +287,7 @@ button:focus {
   }
   60% {
     transform: rotate(0deg);
-  } /* Reset for the last half to pause */
+  } /* reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
@@ -352,7 +300,6 @@ button:focus {
 .home-section {
   position: relative;
   z-index: 1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 100px !important;
@@ -651,7 +598,7 @@ button:focus {
 
 
 /* --------- */
-/* Footer */
+/* footer */
 /* --------- */
 .footer {
   background-color: rgba(32, 62, 33, 0.85);
@@ -696,7 +643,7 @@ button:focus {
   color: #d62709 !important;
 }
 /* --------- */
-/* Projects */
+/* projects */
 /* --------- */
 .project-section {
   position: relative !important;
@@ -774,7 +721,7 @@ button:focus {
 }
 
 .project-heading {
-  color: rgb(10, 67, 34) !important;
+  color: var(--green-dark)!important;
   font-size: 2.0em !important;
   font-weight: 400 !important;
   padding-top: 10px !important;
@@ -782,7 +729,7 @@ button:focus {
 }
 
 /* --------- */
-/* About */
+/* about */
 /* --------- */
 
 /* about section title */
@@ -801,20 +748,20 @@ button:focus {
   font-weight: 300;
 }
 
-/* AT A GLANCE LAYOUT */
+/* at a glance layout */
 .about-glance-layout {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
 
-/* LEFT */
+/* left */
 .about-glance-text {
   flex: 1;
   margin-bottom: 2rem;
 }
 
-/* RIGHT IMAGE */
+/* right - image */
 .about-glance-image {
   flex-shrink: 0;
 }
@@ -827,7 +774,7 @@ button:focus {
 }
 
 
-/* BLOCKS */
+/* blocks */
 .about-block {
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -849,7 +796,7 @@ button:focus {
   color: var(--text-main);
 }
 
-/* AT A GLANCE LIST */
+/* at a glance list */
 .about-glance {
   list-style: none;
   padding: 0;
@@ -862,13 +809,13 @@ button:focus {
   margin-bottom: 0.4rem;
 }
 
-/* ACCENT TEXT */
+/* accent text */
 .accent {
   color: var(--green-muted);
   font-weight: 500;
 }
 
-/* MINI BLOCKS (THIS IS THE IMPORTANT PART) */
+/* mini blocks */
 .about-blocks {
   display: flex;
   flex-wrap: wrap;
@@ -903,7 +850,7 @@ button:focus {
 
 
 
-/* SUBTLE INTERACTION */
+/* subtle interaction */
 .about-mini-block:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
@@ -986,26 +933,6 @@ button:focus {
   }
 }
 
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-}
-
-.like-btn {
-  background-color: #f4410586 !important;
-  border-color: #f4410586 !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #f4410586 !important;
-  border-color: #f4410586 !important;
-}
-
 .animate-like {
   animation-name: likeAnimation;
   animation-fill-mode: forwards;
@@ -1077,7 +1004,7 @@ button:focus {
 }
 
 
-/* TIMELINE */
+/* timeline */
 .timeline {
   position: relative;
   margin: 0 auto;
@@ -1095,7 +1022,7 @@ button:focus {
   background-color: black;
 }
 
-/* Arrow base */
+/* arrow base */
 .timeline-content::before {
   content: "";
   position: absolute;
@@ -1105,14 +1032,14 @@ button:focus {
   border-style: solid;
 }
 
-/* Arrow for LEFT cards */
+/* arrow for left cards */
 .timeline-item.left .timeline-content::before {
   right: -10px;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
 }
 
-/* Arrow for RIGHT cards */
+/* arrow for right cards */
 .timeline-item.right .timeline-content::before {
   left: -10px;
   border-width: 10px 10px 10px 0;
@@ -1120,7 +1047,7 @@ button:focus {
 }
 
 
-/* ITEM */
+/* item */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -1149,7 +1076,7 @@ button:focus {
   transform: translateX(0);
 }
 
-/* CARD */
+/* card */
 .timeline-content {
   background: rgba(255, 255, 255, 0.7);
   padding: 1.25rem 1.5rem;
@@ -1181,7 +1108,7 @@ button:focus {
   color: var(--text-main);
 }
 
-/* DOT */
+/* dot */
 
 .timeline-dot {
   position: absolute;
@@ -1202,13 +1129,13 @@ button:focus {
   overflow: hidden; 
 }
 
-/* LEFT cards → dot on RIGHT edge */
+/* left cards → dot on right edge */
 .timeline-item.left .timeline-dot {
   left: 100%;
   transform: translateX(-50%);
 }
 
-/* RIGHT cards → dot on LEFT edge */
+/* right cards → dot on left edge */
 .timeline-item.right .timeline-dot {
   left: 0;
   transform: translateX(-50%);
@@ -1266,17 +1193,17 @@ button:focus {
   scroll-behavior: smooth;
 }
 
-/* Hide scrollbar — Chrome, Safari */
+/* hide scrollbar — chrome, sffari */
 .community-gallery::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar — Firefox */
+/* hide scrollbar — firefox */
 .community-gallery {
   scrollbar-width: none;
 }
 
-/* Hide scrollbar — Edge */
+/* hide scrollbar — edge */
 .community-gallery {
   -ms-overflow-style: none;
 }
@@ -1292,7 +1219,7 @@ button:focus {
   flex-shrink: 0;
 }
 
-/* Image itself */
+/* image itself */
 .community-card img {
   width: 100%;
   height: 100%;
@@ -1300,7 +1227,7 @@ button:focus {
   transition: filter 0.3s ease;
 }
 
-/* Overlay text */
+/* overlay text */
 .community-overlay {
   position: absolute;
   inset: 0;
@@ -1317,7 +1244,7 @@ button:focus {
   transition: opacity 0.3s ease;
 }
 
-/* Hover effects */
+/* hover effects */
 .community-card:hover img {
   filter: brightness(0.75);
 }
@@ -1351,12 +1278,11 @@ button:focus {
   }
 }
 
-/* =========================
-   MOBILE HOME SECTION FIXES
-   ========================= */
+/* --------- */
+/* mobile home page */
 @media (max-width: 767px) {
 
-  /* Section spacing */
+  /* section spacing */
   .home-section {
     padding-top: 150px !important;
     padding-bottom: 60px !important;
@@ -1367,7 +1293,7 @@ button:focus {
     text-align: center;
   }
 
-  /* Headings */
+  /* headings */
   .heading,
   .heading-name {
     padding-left: 0 !important;
@@ -1379,7 +1305,7 @@ button:focus {
     padding-top: 50px;
   }
 
-  /* Typewriter */
+  /* typewriter */
   .Typewriter__wrapper {
     padding-left: 0 !important;
     font-size: 1.4em !important;
@@ -1393,7 +1319,7 @@ button:focus {
     display: none !important;
   }
 
-  /* Avatar */
+  /* avatar */
   .myAvtar {
     width: 140px !important;
     height: 140px !important;
@@ -1402,12 +1328,12 @@ button:focus {
     display: none !important;
   }
 
-  /* CTA */
+  /* cta */
   .home-cta {
     margin-top: 1.25rem;
   }
 
-  /* About text under hero */
+  /* about text under hero */
   .home-about-body,
   .home-about-description{
     text-align: left;
