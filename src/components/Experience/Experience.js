@@ -99,7 +99,7 @@ export default function Experience() {
 
   return (
     <section className="experience-section" id="experience">
-      <h2 className="experience-title">experience</h2>
+      <h1 className="experience-title">experience</h1>
 
       <div className="timeline">
         {experiences.map((exp, i) => (
@@ -132,19 +132,19 @@ export default function Experience() {
         </div>
     
 
-        <h1 className="project-title">
+        <h2 className="project-title">
             professional <strong className="purple">skillset </strong>
-          </h1>
+          </h2>
 
-          <h1 className="project-heading">
+          <h2 className="project-heading">
             my languages/frameworks
-          </h1>
+          </h2>
 
           <Techstack />
 
-          <h1 className="project-heading">
+          <h2 className="project-heading">
             my tools
-          </h1>
+          </h2>
           <Toolstack />
 
       </section>

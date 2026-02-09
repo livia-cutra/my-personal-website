@@ -14,7 +14,7 @@ function About() {
   return (
     <>
       {" "}
-      <Container fluid className="about-section">
+      <Container className="about-section">
         <Row className="justify-content-center">
           <Col md={8} className="about-content">
             <h1 style={{ fontSize: "2.0em", paddingBottom: "20px", color: "#2e5840" }}>

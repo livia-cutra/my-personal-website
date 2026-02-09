@@ -13,7 +13,7 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <h1 className="project-heading">
+        <h1 className="project-page-title">
           my recent <strong >works </strong>
         </h1>
         <p style={{ color: "dark green" }}>
